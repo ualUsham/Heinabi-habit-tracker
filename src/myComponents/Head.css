@@ -1,0 +1,38 @@
+.navbar{
+    position: relative;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    bottom: 85px;
+    left: 30px;
+}
+.home-about{
+    position: absolute;
+    bottom: 110px;
+    right: 30px; 
+    display: flex;
+    justify-content: end;
+    font-size: 1.3em;
+    gap: 3vw;
+}
+
+@media (max-width: 480px) {
+    .navbar{
+        position: relative;}
+    .logo {
+        width: 50px;
+        height: 50px;
+        bottom: 75px;
+        left: 10px;
+    }
+
+    .home-about {
+        position: absolute;
+        bottom: 62px;
+        right: 2.5vw;
+        font-size: 0.9em;
+        gap: 2.2vw;
+    }
+}
