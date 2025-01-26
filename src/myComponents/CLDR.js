@@ -15,7 +15,7 @@ const CLDR = ({id}) => {
         const savedSkp = JSON.parse(localStorage.getItem(`tobeSkp${id}`)) || [];
         setToBeHlt(savedHlt);
         setToBeSkp(savedSkp);
-    }, []);
+    }, [id]);
 
     // Save tobeHlt to localStorage whenever it updates
     useEffect(() => {
@@ -24,14 +24,14 @@ const CLDR = ({id}) => {
 
         localStorage.setItem(`tobeHlt${id}`, JSON.stringify(tobeHlt));
 
-    }, [tobeHlt]);
+    }, [tobeHlt,id]);
 
     // Save tobeSkp to localStorage whenever it updates
     useEffect(() => {
         if (tobeSkp.length===0){localStorage.removeItem(`tobeSkp${id}`);
                                 return;} //we dont want to store empty items
         localStorage.setItem(`tobeSkp${id}`, JSON.stringify(tobeSkp));
-    }, [tobeSkp]);
+    }, [tobeSkp,id]);
 
 
     const handleSelect=(dateString)=>{
