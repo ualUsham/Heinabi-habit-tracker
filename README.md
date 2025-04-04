@@ -1,7 +1,7 @@
 # Habit Tracker 
 
 ## Description
-A simple habit tracker web app built with React to help users track and manage their daily habits efficiently. You can check it out here  https://heinabi-habit-tracker.onrender.com/ . Remember for first time loading, it may take sometime to load as I am using a Free hosting platform.
+A simple habit tracker web app built with React to help users track and manage their daily habits efficiently. You can check it out here  https://heinabi-habit-tracker.vercel.app/ . Remember for first time loading, it may take sometime to load as I am using a Free hosting platform.
 
 ## Features
 - Add, edit, and delete habits
